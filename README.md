@@ -6,7 +6,8 @@
 
 Pop!_OS 24.04 on COSMIC in frost, navy and petal pink: desktop, terminal,
 shell, Firefox, Brave, cursor, wallpapers. A light rice in jewel tones;
-ruby is kept for what is wrong.
+ruby is kept for what is wrong. The light half of a pair;
+the dark half is [cosmic-prism-theme](https://github.com/atraxsrc/cosmic-prism-theme).
 
 ![Pop!_OS](https://img.shields.io/badge/Pop!_OS-24.04_LTS-804c4f?style=for-the-badge&logo=popos&logoColor=white)
 ![COSMIC](https://img.shields.io/badge/COSMIC-1.0.0-2347a9?style=for-the-badge)
@@ -41,6 +42,14 @@ colour is at least 4.5:1 on the window background.
 | Dim | ![#7b8cad](https://placehold.co/12x12/7b8cad/7b8cad.png) Comments | ![#7B8CAD](https://placehold.co/12x12/7b8cad/7b8cad.png) `#7B8CAD` |
 | Lines | ![#a3acae](https://placehold.co/12x12/a3acae/a3acae.png) Box lines, inactive | ![#A3ACAE](https://placehold.co/12x12/a3acae/a3acae.png) `#A3ACAE` |
 
+| Role | Prism Day | Prism |
+|------|---|---|
+| Background | ![#DFEAEC](https://placehold.co/12x12/dfeaec/dfeaec.png) `#DFEAEC` | ![#060D1F](https://placehold.co/12x12/060d1f/060d1f.png) `#060D1F` |
+| Text | ![#242B3D](https://placehold.co/12x12/242b3d/242b3d.png) `#242B3D` | ![#E0F7FA](https://placehold.co/12x12/e0f7fa/e0f7fa.png) `#E0F7FA` |
+| Accent | ![#804C4F](https://placehold.co/12x12/804c4f/804c4f.png) `#804C4F` | ![#F7C3C6](https://placehold.co/12x12/f7c3c6/f7c3c6.png) `#F7C3C6` |
+| Success | ![#2347A9](https://placehold.co/12x12/2347a9/2347a9.png) `#2347A9` | ![#6488EA](https://placehold.co/12x12/6488ea/6488ea.png) `#6488EA` |
+| Error | ![#B52817](https://placehold.co/12x12/b52817/b52817.png) `#B52817` | ![#E95C4B](https://placehold.co/12x12/e95c4b/e95c4b.png) `#E95C4B` |
+
 The accent is petal pink, 5.6:1 on the background and 6.3:1 on a
 container, so it stays the same colour wherever it is text; buttons and
 selections carry it with snow-white text on top.
@@ -57,7 +66,7 @@ selections carry it with snow-white text on top.
 ├── btop
 │   └── PrismDay.theme                 # btop colour theme
 ├── claude-desktop
-│   ├── cosmic-prismday.jsonc          # Claude Desktop theme (claude-desktop-extra)
+│   ├── cosmic-prism.jsonc          # Claude Desktop theme (claude-desktop-extra)
 │   └── install.sh
 ├── cosmic
 │   ├── PrismDay.ron                   # COSMIC Appearance import (Dark)
@@ -96,7 +105,7 @@ selections carry it with snow-white text on top.
 │   ├── cosmic-prismday.tdesktop-theme # built theme, open this in Telegram
 │   └── build.sh                 # rebuilds it, optionally with a wallpaper
 ├── vscode
-│   ├── themes/                  # Cursor / VS Code colour theme, Cosmic Prism Day
+│   ├── themes/                  # Cursor / VS Code colour themes, Prism (dark) + Prism Day (light)
 │   ├── package.json             # extension manifest
 │   ├── install.sh               # packs a .vsix, installs it with cursor --install-extension
 │   └── README.md
@@ -134,6 +143,11 @@ applets and system UI (maximized apps stay solid), and corners are squared
 Appearance → Style → Frosted glass after import; those sliders survive a theme switch.
 
 Export from Appearance if you tweak backgrounds / tints so you do not lose them.
+
+Pairing tip: import `Prism.ron` from
+[cosmic-prism-theme](https://github.com/atraxsrc/cosmic-prism-theme) into the
+Dark slot and COSMIC's Dark / Light toggle flips between the two. Wallpaper,
+Firefox and the shell layer do not follow the toggle; those are per-rice files.
 
 Prism Day fills the Dark slot only. Put any other rice's light `.ron` in the Light
 slot and COSMIC's Dark / Light toggle flips between the two. Wallpaper,
@@ -230,9 +244,10 @@ packing a `.crx`: [`brave/README.md`](brave/README.md).
 ## Claude Desktop
 
 For the unofficial [claude-desktop-extra](https://github.com/patrickjaja/claude-desktop-extra)
-Linux build. `claude-desktop/cosmic-prismday.jsonc` carries the Prism Day palette in
-both of the file's blocks, so Claude's own Settings → Appearance toggle makes
-no difference. Colours come from `cosmic/PrismDay.ron`, contrast-checked (text and
+Linux build. `claude-desktop/cosmic-prism.jsonc` is one theme with both halves:
+Prism in dark mode and Prism Day in light mode, so Claude's own
+Settings → Appearance toggle switches between the two rices.
+Colours come from `cosmic/*.ron`, contrast-checked (text and
 button text 4.5:1, accents 3:1).
 
 ```bash
@@ -240,19 +255,23 @@ button text 4.5:1, accents 3:1).
 ```
 
 It copies the file into `~/.config/Claude/themes.d/`. Then press
-<kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>T</kbd> in Claude Desktop and pick **cosmic-prismday**.
+<kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>T</kbd> in Claude Desktop and pick **cosmic-prism**.
+
+The same file ships in [`cosmic-prism-theme`](https://github.com/atraxsrc/cosmic-prism-theme),
+so installing from either repo gives the same theme.
 
 ---
 
 ## Cursor editor
 
-`vscode/` is a colour theme extension for [Cursor](https://cursor.com):
-**Cosmic Prism Day**. It is a plain VS Code theme extension, so VS Code and VSCodium
-take it too. Code is coloured the way Neovim is in the rice; the workbench is
-frost with snow menus, hovers and inputs, petal on the active tab, buttons
-and menu highlight, and the integrated terminal uses the COSMIC Terminal
-scheme. Cursor builds its Agent and chat panels from the same theme colours,
-so they follow along.
+`vscode/` is a colour theme extension for [Cursor](https://cursor.com) with
+both halves of the pair: **Cosmic Prism** and **Cosmic Prism Day**. It is a
+plain VS Code theme extension, so VS Code and VSCodium take it too, and the
+same extension ships in cosmic-prism-theme. Code is coloured the way Neovim is
+in the rice; the workbench is frost with snow menus, hovers and inputs, petal
+on the active tab, buttons and menu highlight, and the integrated terminal
+uses the COSMIC Terminal scheme. Cursor builds its Agent and chat panels from
+the same theme colours, so they follow along.
 
 ```bash
 ./vscode/install.sh
@@ -261,8 +280,9 @@ so they follow along.
 It packs `vscode/` into a `.vsix` and installs it with
 `cursor --install-extension`; run it again after editing the theme. Then press
 <kbd>Ctrl</kbd>+<kbd>K</kbd> <kbd>Ctrl</kbd>+<kbd>T</kbd> in Cursor and pick
-**Cosmic Prism Day**. The colours and the contrast notes are in
-[`vscode/README.md`](vscode/README.md).
+**Cosmic Prism Day**. Three lines in Cursor's `settings.json` make it follow
+COSMIC's Dark / Light toggle between Prism and Prism Day; they, the colours and
+the contrast notes are in [`vscode/README.md`](vscode/README.md).
 
 ---
 
@@ -290,6 +310,9 @@ background is plain frost; to put a wallpaper behind the chat instead
 
 Built against Telegram Desktop 7.3.1. Calls, group calls, statistics charts and
 premium badges keep Telegram's own colours.
+
+Telegram has no dark / light pairing, so Prism, the dark half, ships its
+own theme.
 
 ---
 
@@ -529,11 +552,16 @@ The GUI steps it cannot do are printed at the end:
 2. COSMIC Terminal → View → Color schemes → Dark tab → Import `cosmic-term/PrismDay-term.ron`
 3. Firefox: disable the old rice's add-on, enable this one, restart Firefox
 4. Settings → Wallpaper → a file from `backgrounds/`
-5. Claude Desktop: Ctrl+Shift+T → `cosmic-prismday`
+5. Claude Desktop: Ctrl+Shift+T → `cosmic-prism`, Appearance → Light
 6. `exec zsh`, restart Neovim (`:Lazy clean` drops plugins only the old specs used)
 
 Skip 1 and 2 when that slot already holds Prism Day. The first time on this rice,
 run [Setup](#setup) once for the fonts, icons and cursor.
+
+**Within the pair** (Prism Day ↔ [Prism](https://github.com/atraxsrc/cosmic-prism-theme)): the two halves
+sit side by side in COSMIC's Dark and Light slots and share one Claude Desktop
+theme, so after the first time only the Firefox add-on and the wallpaper are
+left by hand. Add `--keep-icons` to keep one icon colour across the pair.
 
 Leaving Prism Day is the next rice's `./scripts/switch.sh`. `./cursors/uninstall.sh`
 puts the Pop cursor back.

@@ -1,7 +1,7 @@
 {
-  "name": "cosmic-prismday-theme",
-  "displayName": "Cosmic Prism Day",
-  "description": "Dark colour theme from the COSMIC Prism Day rice, syntax as in its Neovim scheme.",
+  "name": "cosmic-prism-theme",
+  "displayName": "Cosmic Prism / Cosmic Prism Day",
+  "description": "Cosmic Prism (dark) and Cosmic Prism Day (light), the COSMIC rice pair, for Cursor and VS Code",
   "version": "1.0.0",
   "publisher": "atraxsrc",
   "license": "MIT",
@@ -22,13 +22,20 @@
   ],
   "keywords": [
     "theme",
+    "dark",
     "light",
     "cosmic",
+    "prism",
     "prismday",
     "cursor"
   ],
   "contributes": {
     "themes": [
+      {
+        "label": "Cosmic Prism",
+        "uiTheme": "vs-dark",
+        "path": "./themes/cosmic-prism-color-theme.json"
+      },
       {
         "label": "Cosmic Prism Day",
         "uiTheme": "vs",
