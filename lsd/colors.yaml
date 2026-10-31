@@ -1,0 +1,41 @@
+# 256-colour codes nearest the Prism Day palette on frost (lsd 1.0.0 does not accept
+# #hex here): 95 petal, 124 ruby, 95 coral, 25 azure, 59 ice,
+# 240 teal, 60 haze, 103 dusk.
+user: 59
+group: 60
+permission:
+  read: 60
+  write: 59
+  exec: 95
+  exec-sticky: 95
+  no-access: 103
+  octal: 240
+  acl: 240
+  context: 240
+date:
+  hour-old: 59
+  day-old: 25
+  older: 103
+size:
+  none: 103
+  small: 25
+  medium: 59
+  large: 124
+inode:
+  valid: 25
+  invalid: 124
+links:
+  valid: 240
+  invalid: 124
+tree-edge: 103
+git-status:
+  default: 103
+  unmodified: 103
+  ignored: 103
+  new-in-index: 25
+  new-in-workdir: 25
+  typechange: 59
+  deleted: 124
+  renamed: 240
+  modified: 95
+  conflicted: 124
