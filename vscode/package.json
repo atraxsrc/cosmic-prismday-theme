@@ -1,0 +1,39 @@
+{
+  "name": "cosmic-prismday-theme",
+  "displayName": "Cosmic Prism Day",
+  "description": "Dark colour theme from the COSMIC Prism Day rice, syntax as in its Neovim scheme.",
+  "version": "1.0.0",
+  "publisher": "atraxsrc",
+  "license": "MIT",
+  "icon": "icon.png",
+  "galleryBanner": {
+    "color": "#DFEAEC",
+    "theme": "dark"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/atraxsrc/cosmic-prismday-theme"
+  },
+  "engines": {
+    "vscode": "^1.70.0"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "keywords": [
+    "theme",
+    "light",
+    "cosmic",
+    "prismday",
+    "cursor"
+  ],
+  "contributes": {
+    "themes": [
+      {
+        "label": "Cosmic Prism Day",
+        "uiTheme": "vs",
+        "path": "./themes/cosmic-prismday-color-theme.json"
+      }
+    ]
+  }
+}
