@@ -69,7 +69,7 @@ selections carry it with snow-white text on top.
 │   ├── cosmic-prism.jsonc          # Claude Desktop theme (claude-desktop-extra)
 │   └── install.sh
 ├── cosmic
-│   ├── PrismDay.ron                   # COSMIC Appearance import (Dark)
+│   ├── PrismDay.ron                   # COSMIC Appearance import (Light)
 │   ├── config/                  # baseline settings: fonts, icons, terminal look
 │   └── install.sh
 ├── cosmic-term
@@ -132,7 +132,9 @@ selections carry it with snow-white text on top.
 
 ## COSMIC Desktop
 
-Settings → Desktop → Appearance → **Dark** → **Import** → `cosmic/PrismDay.ron`
+This is a **Light** theme, so it goes in COSMIC's Light slot:
+
+Settings → Desktop → Appearance → **Light** → **Import** → `cosmic/PrismDay.ron`
 
 Accent is petal ![#804C4F](https://placehold.co/12x12/804c4f/804c4f.png) `#804C4F`. Use the `+` control if you want a custom swatch.
 
@@ -147,10 +149,6 @@ Export from Appearance if you tweak backgrounds / tints so you do not lose them.
 Pairing tip: import `Prism.ron` from
 [cosmic-prism-theme](https://github.com/atraxsrc/cosmic-prism-theme) into the
 Dark slot and COSMIC's Dark / Light toggle flips between the two. Wallpaper,
-Firefox and the shell layer do not follow the toggle; those are per-rice files.
-
-Prism Day fills the Dark slot only. Put any other rice's light `.ron` in the Light
-slot and COSMIC's Dark / Light toggle flips between the two. Wallpaper,
 Firefox and the shell layer do not follow the toggle; those are per-rice files.
 
 ### Baseline settings
@@ -176,7 +174,7 @@ Icons below) and import the terminal scheme first, then:
 It backs up each file it replaces to `*.bak` and COSMIC applies it live.
 
 The interface font is the Light weight on purpose. COSMIC sets interface text
-brightness itself (the text tint only picks the hue), so on these dark panels
+brightness itself (the text tint only picks the hue), so on these light panels
 labels land near ![#3C4C4A](https://placehold.co/12x12/3c4c4a/3c4c4a.png) `#3C4C4A` whatever tint you choose; the thinner strokes are
 what calms them at night. Settings → Fonts lists only families, so the weight
 lives in `cosmic/config/com.system76.CosmicTk/v1/interface_font`.
@@ -188,8 +186,8 @@ lives in `cosmic/config/com.system76.CosmicTk/v1/interface_font`.
 The desktop `.ron` does not colour ANSI text.
 
 1. COSMIC Terminal → **View → Color schemes…** (not Settings → Appearance)
-2. Dark tab → **Import** → `cosmic-term/PrismDay-term.ron`
-3. View → Settings → Appearance → Color scheme (dark) → **Prism Day**
+2. Light tab → **Import** → `cosmic-term/PrismDay-term.ron`
+3. View → Settings → Appearance → Color scheme (light) → **Prism Day**
 
 If a profile is set as default, set the scheme on that profile too or the
 dropdown will look like it did nothing.
@@ -217,7 +215,7 @@ Two layers:
    This is the main look.
 2. **Stylesheets (optional):** `firefox/chrome/` adds rounded corners, petal
    menu hover, petal accents and blank new-tab tiles on top of the theme
-   (they also work with Firefox's built-in Dark theme):
+   (they also work with Firefox's built-in Light theme):
 
 ```bash
 ./firefox/install.sh
@@ -439,7 +437,7 @@ cp btop/PrismDay.theme ~/.config/btop/themes/
 Icons: **Cosmic-PrismDay**, the [Kanagawa icons](https://github.com/Fausto-Korpsvart/Kanagawa-GKT-Theme/tree/main/icons/Kanagawa)
 by Fausto Korpsvart recolored to this palette in
 [cosmic-icon-themes](https://github.com/atraxsrc/cosmic-icon-themes). Folders come in
-three colors: **Petal** ![#804C4F](https://placehold.co/12x12/804c4f/804c4f.png) `#804C4F` (default), **Ruby** ![#B52817](https://placehold.co/12x12/b52817/b52817.png) `#B52817` and **Dark** ![#D5E0E2](https://placehold.co/12x12/d5e0e2/d5e0e2.png) `#D5E0E2` with petal symbols.
+three colors: **Petal** ![#804C4F](https://placehold.co/12x12/804c4f/804c4f.png) `#804C4F` (default), **Ruby** ![#B52817](https://placehold.co/12x12/b52817/b52817.png) `#B52817` and **Dark** ![#242B3D](https://placehold.co/12x12/242b3d/242b3d.png) `#242B3D` with petal symbols.
 
 ![Cosmic-PrismDay folder colors](https://raw.githubusercontent.com/atraxsrc/cosmic-icon-themes/main/previews/Cosmic-PrismDay.png)
 
@@ -472,10 +470,10 @@ git clone https://github.com/atraxsrc/cosmic-prismday-theme.git
 cd cosmic-prismday-theme
 
 # desktop
-# Settings → Appearance → Dark → Import cosmic/PrismDay.ron
+# Settings → Appearance → Light → Import cosmic/PrismDay.ron
 
 # terminal
-# View → Color schemes → Import cosmic-term/PrismDay-term.ron
+# View → Color schemes → Light tab → Import cosmic-term/PrismDay-term.ron
 
 # firefox theme: about:debugging → Load Temporary Add-on → firefox/theme/manifest.json
 # (or zip and sign it, see firefox/README.md)
@@ -532,7 +530,7 @@ the same script.
 
 It backs up every file it replaces, then:
 
-- copies `cosmic/config/` (fonts, terminal look, icons) and turns dark mode on.
+- copies `cosmic/config/` (fonts, terminal look, icons) and turns light mode on.
   The terminal scheme and icon theme are only replaced when the current one is
   not already a Prism Day variant, so a dimmer text variant or another icon colour
   survives. Icons stay as they are until `./icons/install.sh` has run.
@@ -548,8 +546,8 @@ It backs up every file it replaces, then:
 
 The GUI steps it cannot do are printed at the end:
 
-1. Settings → Desktop → Appearance → Dark → Import `cosmic/PrismDay.ron`
-2. COSMIC Terminal → View → Color schemes → Dark tab → Import `cosmic-term/PrismDay-term.ron`
+1. Settings → Desktop → Appearance → Light → Import `cosmic/PrismDay.ron`
+2. COSMIC Terminal → View → Color schemes → Light tab → Import `cosmic-term/PrismDay-term.ron`
 3. Firefox: disable the old rice's add-on, enable this one, restart Firefox
 4. Settings → Wallpaper → a file from `backgrounds/`
 5. Claude Desktop: Ctrl+Shift+T → `cosmic-prism`, Appearance → Light

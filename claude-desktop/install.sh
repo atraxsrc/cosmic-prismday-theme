@@ -24,4 +24,4 @@ fi
 
 echo
 echo "Done. In Claude Desktop press Ctrl+Shift+T and pick cosmic-prismday."
-echo "Prism Day is dark only; Settings -> Appearance changes nothing."
+echo "Prism Day is the light half; Settings -> Appearance -> Dark shows Prism."

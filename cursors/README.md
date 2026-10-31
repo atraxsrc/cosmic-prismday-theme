@@ -10,7 +10,7 @@ All patched so they work in COSMIC's own apps.
 | ------- | ------- | ---- | ------------------- | --------- |
 | **Petal** (default) | ![](../assets/cursors/Oxygen-PrismDay-Petal.png) | ![#804C4F](https://placehold.co/12x12/804c4f/804c4f.png) `#804C4F` | 5.6:1 | Petal folders |
 | **Ruby** | ![](../assets/cursors/Oxygen-PrismDay-Ruby.png) | ![#B52817](https://placehold.co/12x12/b52817/b52817.png) `#B52817` | 5.2:1 | Ruby folders |
-| **Dark** | ![](../assets/cursors/Oxygen-PrismDay-Dark.png) | ![#D5E0E2](https://placehold.co/12x12/d5e0e2/d5e0e2.png) `#D5E0E2` | 1.1:1 | Dark folders |
+| **Dark** | ![](../assets/cursors/Oxygen-PrismDay-Dark.png) | ![#242B3D](https://placehold.co/12x12/242b3d/242b3d.png) `#242B3D` | 11.5:1 | Dark folders |
 
 Each variant is a normal folder here (`Oxygen-PrismDay-<Variant>/index.theme` + `cursors/`),
 already fixed for COSMIC. Nothing is downloaded at install time.
