@@ -1,0 +1,36 @@
+{
+  "manifest_version": 3,
+  "name": "Cosmic Prism Day",
+  "version": "1.0",
+  "description": "Frost theme from the COSMIC Prism Day rice: azure icons, one petal-pink accent.",
+  "icons": {
+    "32": "icons/icon-32.png",
+    "48": "icons/icon-48.png",
+    "128": "icons/icon-128.png"
+  },
+  "theme": {
+    "colors": {
+      "frame": [223, 234, 236],
+      "frame_inactive": [223, 234, 236],
+      "frame_incognito": [223, 234, 236],
+      "frame_incognito_inactive": [223, 234, 236],
+      "background_tab": [223, 234, 236],
+      "background_tab_inactive": [223, 234, 236],
+      "background_tab_incognito": [223, 234, 236],
+      "background_tab_incognito_inactive": [223, 234, 236],
+      "toolbar": [238, 248, 249],
+      "tab_text": [128, 76, 79],
+      "tab_background_text": [35, 71, 169],
+      "tab_background_text_inactive": [35, 71, 169],
+      "tab_background_text_incognito": [35, 71, 169],
+      "tab_background_text_incognito_inactive": [35, 71, 169],
+      "bookmark_text": [36, 43, 61],
+      "toolbar_button_icon": [35, 71, 169],
+      "omnibox_background": [203, 214, 216],
+      "omnibox_text": [36, 43, 61],
+      "ntp_background": [223, 234, 236],
+      "ntp_text": [36, 43, 61],
+      "ntp_link": [128, 76, 79]
+    }
+  }
+}

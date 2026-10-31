@@ -1,0 +1,50 @@
+{
+  "manifest_version": 2,
+  "name": "Cosmic Prism Day",
+  "version": "1.0",
+  "description": "Frost theme from the COSMIC Prism Day rice: azure icons, one petal-pink accent.",
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "{d9debd76-2322-451f-ae4d-898504550106}"
+    }
+  },
+  "icons": {
+    "32": "icons/icon-32.png",
+    "48": "icons/icon-48.png",
+    "64": "icons/icon-64.png",
+    "96": "icons/icon-96.png",
+    "128": "icons/icon-128.png"
+  },
+  "theme": {
+    "colors": {
+      "toolbar": "#EEF8F9",
+      "toolbar_text": "#242b3d",
+      "frame": "#DFEAEC",
+      "tab_background_text": "#2347a9",
+      "tab_text": "#804c4f",
+      "toolbar_field": "#cbd6d8",
+      "toolbar_field_text": "#242b3d",
+      "toolbar_field_border_focus": "#804C4F",
+      "toolbar_field_highlight": "#804C4F",
+      "toolbar_field_highlight_text": "#DFEAEC",
+      "tab_line": "#804C4F",
+      "popup": "#EEF8F9",
+      "popup_text": "#242b3d",
+      "button_background_active": "#804C4F",
+      "button_background_hover": "#cbd6d8",
+      "frame_inactive": "#DFEAEC",
+      "icons_attention": "#804C4F",
+      "icons": "#2347a9",
+      "ntp_background": "#DFEAEC",
+      "ntp_text": "#242b3d",
+      "popup_border": "#306B65",
+      "popup_highlight_text": "#DFEAEC",
+      "popup_highlight": "#804C4F",
+      "sidebar_border": "#cbd6d8",
+      "sidebar_highlight_text": "#DFEAEC",
+      "sidebar_highlight": "#804C4F",
+      "sidebar_text": "#242b3d",
+      "tab_loading": "#804C4F"
+    }
+  }
+}

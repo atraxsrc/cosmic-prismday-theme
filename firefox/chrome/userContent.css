@@ -1,0 +1,67 @@
+/* ==========================================================================
+   Prism Day - userContent.css
+   Ported from the DarkGold baseline, recoloured for the COSMIC Prism Day palette
+
+   New tab / home / private pages only:
+     - petal accent and focus, teal links
+     - petal focus ring on shortcut tiles, petal personalize button
+     - shortcut artwork hidden (tiles stay, icons go blank)
+   No size / position changes.
+
+   Install:  chrome/userContent.css   (same pref + restart as userChrome.css)
+   ========================================================================== */
+
+@-moz-document url-prefix("about:newtab"),
+               url-prefix("about:home"),
+               url-prefix("about:privatebrowsing") {
+
+  :root {
+    --newtab-primary-action-background: #804C4F !important;
+    --newtab-primary-action-background-dimmed: rgba(128, 76, 79, 0.25) !important;
+
+    --color-accent-primary: #804C4F !important;
+    --color-accent-primary-hover: #6D4143 !important;
+    --color-accent-primary-active: #804C4F !important;
+
+    --newtab-focus-border: #804C4F !important;
+    --newtab-focus-outline: #804C4F !important;
+    --newtab-textbox-focus-color: #804C4F !important;
+
+    --in-content-accent-color: #804C4F !important;
+    --in-content-accent-color-active: #2347A9 !important;
+    --in-content-focus-outline-color: #804C4F !important;
+
+    --link-color: #306B65 !important;
+    --link-color-hover: #171E30 !important;
+
+    --focus-outline-color: #804C4F !important;
+    --focus-outline: 2px solid #804C4F !important;
+    --newtab-button-focus-border: #804C4F !important;
+    --button-background-color: #804C4F !important;
+    --button-text-color: #DFEAEC !important;
+  }
+
+  .top-site-outer:is(:focus, :focus-visible, .active) .tile,
+  .top-site-outer .top-site-button:focus .tile,
+  .top-site-outer .top-site-button:focus-visible .tile {
+    outline: 2px solid #804C4F !important;
+    border-color: #804C4F !important;
+  }
+
+  .personalize-button {
+    background-color: #804C4F !important;
+    color: #DFEAEC !important;
+  }
+
+  /* Hide shortcut artwork so tiles stay blank */
+  .top-site-icon,
+  .top-site-icon.rich-icon,
+  .top-site-icon.default-icon,
+  .screenshot,
+  .screenshot.active,
+  .letter-fallback {
+    background-image: none !important;
+    background-color: transparent !important;
+    opacity: 0 !important;
+  }
+}
