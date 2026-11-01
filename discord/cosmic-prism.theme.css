@@ -1,0 +1,243 @@
+/**
+ * @name Cosmic Prism
+ * @author atraxsrc
+ * @description Prism (dark) / Prism Day (light), the COSMIC rice pair.
+ * @version 1.0.0
+ * @source https://github.com/atraxsrc/cosmic-prism-theme
+ */
+
+/* cosmic-prism - Discord theme for Vencord / Vesktop (MIT). Only the colour
+ * variables: Discord's layout stays. With Appearance -> Theme -> "Sync with
+ * computer" it follows COSMIC's Dark / Light toggle between the two halves.
+ * The same file ships in both repos.
+ *
+ * Install: ./discord/install.sh copies it to ~/.config/Vencord/themes/ and
+ * ~/.config/vesktop/themes/, then Settings -> Vencord -> Themes -> tick it.
+ * Colours come from the rices' cosmic/*.ron palettes; edit the palette,
+ * not this file. */
+
+.theme-dark, .theme-darker, .theme-midnight {
+  /* Prism */
+  --background-primary: #060D1F;
+  --background-secondary: #0E1628;
+  --background-secondary-alt: #161F33;
+  --background-tertiary: #030710;
+  --background-accent: #161F33;
+  --background-floating: #0E1628;
+  --background-mobile-primary: #060D1F;
+  --background-mobile-secondary: #0E1628;
+  --background-modifier-hover: #0E162899;
+  --background-modifier-active: #161F33;
+  --background-modifier-selected: #161F33;
+  --background-modifier-accent: #262E40;
+  --background-message-hover: #0E162880;
+  --background-mentioned: #F7C3C620;
+  --background-mentioned-hover: #F7C3C630;
+  --channeltextarea-background: #0E1628;
+  --deprecated-card-bg: #0E1628;
+  --deprecated-quickswitcher-input-background: #0E1628;
+  --input-background: #0E1628;
+  --modal-background: #060D1F;
+  --modal-footer-background: #0E1628;
+  --activity-card-background: #0E1628;
+
+  /* 2025 layout names */
+  --bg-base-primary: #060D1F;
+  --bg-base-secondary: #0E1628;
+  --bg-base-tertiary: #030710;
+  --bg-surface-raised: #0E1628;
+  --bg-surface-overlay: #161F33;
+  --bg-mod-faint: #0E162866;
+  --bg-mod-subtle: #161F3399;
+  --bg-mod-strong: #262E40;
+  --background-base-low: #060D1F;
+  --background-base-lower: #030710;
+  --background-base-lowest: #030710;
+  --background-surface-high: #0E1628;
+  --background-surface-higher: #161F33;
+  --background-surface-highest: #262E40;
+  --border-subtle: #262E40;
+  --border-normal: #5A6B8C;
+  --border-strong: #8893B3;
+  --border-faint: #161F33;
+
+  --text-normal: #E0F7FA;
+  --text-muted: #85CEC4;
+  --text-link: #F7C3C6;
+  --text-link-low-saturation: #FFA69E;
+  --text-positive: #6488EA;
+  --text-warning: #FFA69E;
+  --text-danger: #E95C4B;
+  --text-brand: #F7C3C6;
+  --header-primary: #E0F7FA;
+  --header-secondary: #85CEC4;
+  --interactive-normal: #85CEC4;
+  --interactive-hover: #E0F7FA;
+  --interactive-active: #F6F8FF;
+  --interactive-muted: #5A6B8C;
+  --channels-default: #85CEC4;
+  --text-default: #E0F7FA;
+  --text-secondary: #85CEC4;
+  --text-tertiary: #8893B3;
+  --text-strong: #F6F8FF;
+  --text-feedback-positive: #6488EA;
+  --text-feedback-warning: #FFA69E;
+  --text-feedback-critical: #E95C4B;
+  --text-primary: #E0F7FA;
+
+  --brand-500: #F7C3C6;
+  --brand-560: #F7C3C6;
+  --brand-600: #D32E1A;
+  --brand-experiment: #F7C3C6;
+  --brand-experiment-560: #F7C3C6;
+  --brand-experiment-600: #D32E1A;
+  --control-brand-foreground: #F7C3C6;
+  --control-brand-foreground-new: #F7C3C6;
+  --mention-foreground: #F7C3C6;
+  --mention-background: #F7C3C620;
+  --status-positive: #6488EA;
+  --status-positive-background: #6488EA;
+  --status-positive-text: #060D1F;
+  --status-warning: #FFA69E;
+  --status-warning-background: #FFA69E;
+  --status-warning-text: #060D1F;
+  --status-danger: #E95C4B;
+  --status-danger-background: #E95C4B;
+  --status-danger-text: #060D1F;
+  --info-positive-foreground: #6488EA;
+  --info-warning-foreground: #FFA69E;
+  --info-danger-foreground: #E95C4B;
+  --button-positive-background: #6488EA;
+  --button-positive-background-hover: #83A0EE;
+  --button-danger-background: #E95C4B;
+  --button-danger-background-hover: #E95C4B;
+  --button-secondary-background: #161F33;
+  --button-secondary-background-hover: #262E40;
+  --button-secondary-background-active: #5A6B8C;
+  --button-outline-brand-border: #F7C3C6;
+  --button-outline-brand-text: #F7C3C6;
+
+  --scrollbar-auto-thumb: #5A6B8C;
+  --scrollbar-auto-track: #060D1F;
+  --scrollbar-thin-thumb: #5A6B8C;
+  --scrollbar-thin-track: transparent;
+  --scrollbar-auto-scrollbar-color-thumb: #5A6B8C;
+  --scrollbar-auto-scrollbar-color-track: #060D1F;
+  --focus-primary: #F7C3C6;
+  --spoiler-background: #161F33;
+  --spoiler-hover-background: #262E40;
+  --text-code: #6488EA;
+}
+
+.theme-light {
+  /* Prism Day */
+  --background-primary: #DFEAEC;
+  --background-secondary: #EEF8F9;
+  --background-secondary-alt: #D5E0E2;
+  --background-tertiary: #D5E0E2;
+  --background-accent: #D5E0E2;
+  --background-floating: #EEF8F9;
+  --background-mobile-primary: #DFEAEC;
+  --background-mobile-secondary: #EEF8F9;
+  --background-modifier-hover: #EEF8F999;
+  --background-modifier-active: #D5E0E2;
+  --background-modifier-selected: #D5E0E2;
+  --background-modifier-accent: #CBD6D8;
+  --background-message-hover: #EEF8F980;
+  --background-mentioned: #804C4F20;
+  --background-mentioned-hover: #804C4F30;
+  --channeltextarea-background: #EEF8F9;
+  --deprecated-card-bg: #EEF8F9;
+  --deprecated-quickswitcher-input-background: #EEF8F9;
+  --input-background: #EEF8F9;
+  --modal-background: #DFEAEC;
+  --modal-footer-background: #EEF8F9;
+  --activity-card-background: #EEF8F9;
+
+  /* 2025 layout names */
+  --bg-base-primary: #DFEAEC;
+  --bg-base-secondary: #EEF8F9;
+  --bg-base-tertiary: #D5E0E2;
+  --bg-surface-raised: #EEF8F9;
+  --bg-surface-overlay: #D5E0E2;
+  --bg-mod-faint: #EEF8F966;
+  --bg-mod-subtle: #D5E0E299;
+  --bg-mod-strong: #CBD6D8;
+  --background-base-low: #DFEAEC;
+  --background-base-lower: #D5E0E2;
+  --background-base-lowest: #D5E0E2;
+  --background-surface-high: #EEF8F9;
+  --background-surface-higher: #D5E0E2;
+  --background-surface-highest: #CBD6D8;
+  --border-subtle: #CBD6D8;
+  --border-normal: #CBD6D8;
+  --border-strong: #515B7C;
+  --border-faint: #D5E0E2;
+
+  --text-normal: #242B3D;
+  --text-muted: #306B65;
+  --text-link: #804C4F;
+  --text-link-low-saturation: #963E36;
+  --text-positive: #2347A9;
+  --text-warning: #963E36;
+  --text-danger: #B52817;
+  --text-brand: #804C4F;
+  --header-primary: #242B3D;
+  --header-secondary: #306B65;
+  --interactive-normal: #306B65;
+  --interactive-hover: #242B3D;
+  --interactive-active: #171E30;
+  --interactive-muted: #7B8CAD;
+  --channels-default: #306B65;
+  --text-default: #242B3D;
+  --text-secondary: #306B65;
+  --text-tertiary: #515B7C;
+  --text-strong: #171E30;
+  --text-feedback-positive: #2347A9;
+  --text-feedback-warning: #963E36;
+  --text-feedback-critical: #B52817;
+  --text-primary: #242B3D;
+
+  --brand-500: #804C4F;
+  --brand-560: #804C4F;
+  --brand-600: #912012;
+  --brand-experiment: #804C4F;
+  --brand-experiment-560: #804C4F;
+  --brand-experiment-600: #912012;
+  --control-brand-foreground: #804C4F;
+  --control-brand-foreground-new: #804C4F;
+  --mention-foreground: #804C4F;
+  --mention-background: #804C4F20;
+  --status-positive: #2347A9;
+  --status-positive-background: #2347A9;
+  --status-positive-text: #DFEAEC;
+  --status-warning: #963E36;
+  --status-warning-background: #963E36;
+  --status-warning-text: #DFEAEC;
+  --status-danger: #B52817;
+  --status-danger-background: #B52817;
+  --status-danger-text: #DFEAEC;
+  --info-positive-foreground: #2347A9;
+  --info-warning-foreground: #963E36;
+  --info-danger-foreground: #B52817;
+  --button-positive-background: #2347A9;
+  --button-positive-background-hover: #2347A9;
+  --button-danger-background: #B52817;
+  --button-danger-background-hover: #B52817;
+  --button-secondary-background: #D5E0E2;
+  --button-secondary-background-hover: #CBD6D8;
+  --button-secondary-background-active: #CBD6D8;
+  --button-outline-brand-border: #804C4F;
+  --button-outline-brand-text: #804C4F;
+
+  --scrollbar-auto-thumb: #CBD6D8;
+  --scrollbar-auto-track: #DFEAEC;
+  --scrollbar-thin-thumb: #CBD6D8;
+  --scrollbar-thin-track: transparent;
+  --scrollbar-auto-scrollbar-color-thumb: #CBD6D8;
+  --scrollbar-auto-scrollbar-color-track: #DFEAEC;
+  --focus-primary: #804C4F;
+  --spoiler-background: #D5E0E2;
+  --spoiler-hover-background: #CBD6D8;
+  --text-code: #2347A9;
+}

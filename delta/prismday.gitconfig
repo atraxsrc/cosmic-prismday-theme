@@ -1,0 +1,56 @@
+# PrismDay for delta (the git diff pager), part of cosmic-prismday-theme (MIT).
+# Removed lines in the error colour, added lines in the success colour, both
+# on the editor's container; changed words on a solid error / success block
+# with the editor background as text (the same as DiffAdd / DiffDelete /
+# DiffText in Neovim). Code inside the diff uses the bat PrismDay theme, so run
+# ./bat/install.sh first.
+#
+# Install: ./delta/install.sh puts this in ~/.config/delta/, then add to
+# ~/.gitconfig (the installer prints this, it never edits ~/.gitconfig):
+#   [include]
+#       path = ~/.config/delta/prismday.gitconfig
+# and, if delta is not your pager yet:
+#   [core]
+#       pager = delta
+#   [interactive]
+#       diffFilter = delta --color-only
+
+[delta]
+    features = prismday
+
+[delta "prismday"]
+    light = true
+    syntax-theme = PrismDay
+    navigate = true
+    line-numbers = true
+
+    file-style = bold "#804C4F"
+    file-decoration-style = "#CBD6D8" ul
+    hunk-header-style = file line-number syntax
+    hunk-header-decoration-style = "#CBD6D8" box
+    hunk-header-file-style = "#306B65"
+    hunk-header-line-number-style = "#526664"
+
+    minus-style = "#B52817" "#EEF8F9"
+    minus-emph-style = bold "#DFEAEC" "#B52817"
+    minus-non-emph-style = "#B52817" "#EEF8F9"
+    plus-style = "#2347A9" "#EEF8F9"
+    plus-emph-style = bold "#DFEAEC" "#2347A9"
+    plus-non-emph-style = "#2347A9" "#EEF8F9"
+    zero-style = syntax
+    whitespace-error-style = "#DFEAEC" "#963E36"
+
+    line-numbers-left-style = "#CBD6D8"
+    line-numbers-right-style = "#CBD6D8"
+    line-numbers-minus-style = "#B52817"
+    line-numbers-plus-style = "#2347A9"
+    line-numbers-zero-style = "#7B8CAD"
+
+    commit-style = bold "#526664"
+    commit-decoration-style = "#CBD6D8" box
+    blame-palette = "#DFEAEC #EEF8F9 #D5E0E2"
+    blame-code-style = syntax
+    merge-conflict-begin-symbol = ▼
+    merge-conflict-end-symbol = ▲
+    merge-conflict-ours-diff-header-style = bold "#2347A9"
+    merge-conflict-theirs-diff-header-style = bold "#963E36"

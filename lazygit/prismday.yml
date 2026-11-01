@@ -1,0 +1,37 @@
+# PrismDay for lazygit, part of cosmic-prismday-theme (MIT). Only the colours: your
+# own ~/.config/lazygit/config.yml keeps the rest.
+#
+# Install: ./lazygit/install.sh puts this in ~/.config/lazygit/prismday.yml and
+# zsh/prismday.zsh sets LG_CONFIG_FILE to "config.yml,prismday.yml" so lazygit
+# reads both (the later file wins). Without the zsh layer:
+#   export LG_CONFIG_FILE="$HOME/.config/lazygit/config.yml,$HOME/.config/lazygit/prismday.yml"
+gui:
+  theme:
+    activeBorderColor:
+      - "#804C4F"
+      - bold
+    inactiveBorderColor:
+      - "#CBD6D8"
+    searchingActiveBorderColor:
+      - "#963E36"
+      - bold
+    optionsTextColor:
+      - "#306B65"
+    selectedLineBgColor:
+      - "#D5E0E2"
+    inactiveViewSelectedLineBgColor:
+      - "#EEF8F9"
+    cherryPickedCommitFgColor:
+      - "#DFEAEC"
+    cherryPickedCommitBgColor:
+      - "#526664"
+    markedBaseCommitFgColor:
+      - "#DFEAEC"
+    markedBaseCommitBgColor:
+      - "#2347A9"
+    unstagedChangesColor:
+      - "#B52817"
+    defaultFgColor:
+      - "#242B3D"
+  authorColors:
+    "*": "#526664"
