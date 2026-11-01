@@ -136,7 +136,7 @@ selections carry it with snow-white text on top.
 │   ├── PrismDay.conf            # qt5ct / qt6ct colour scheme
 │   └── install.sh
 ├── starship
-│   ├── starship.toml            # prompt, palette colours, clock on the right
+│   ├── starship.toml            # prompt, palette colours
 │   └── install.sh
 ├── telegram
 │   ├── colors.tdesktop-theme    # Telegram Desktop colour scheme (source)
@@ -518,8 +518,7 @@ kitty and Alacritty have no such switch; include the other file instead.
 `starship/starship.toml` is close to the defaults with the palette declared
 once as `[palettes.prismday]` and used by name: the directory in ![#306B65](https://placehold.co/12x12/306b65/306b65.png) `#306B65`,
 the branch in ![#526664](https://placehold.co/12x12/526664/526664.png) `#526664`, ![#963E36](https://placehold.co/12x12/963e36/963e36.png) `#963E36` for a dirty tree, a ![#2347A9](https://placehold.co/12x12/2347a9/2347a9.png) `#2347A9` prompt
-character that turns ![#B52817](https://placehold.co/12x12/b52817/b52817.png) `#B52817` after a failed command, a dim `HH:MM` clock on
-the right. Modules it does not style keep their defaults, which use the ANSI
+character that turns ![#B52817](https://placehold.co/12x12/b52817/b52817.png) `#B52817` after a failed command. Modules it does not style keep their defaults, which use the ANSI
 slots the COSMIC Terminal scheme colours. `zsh/prismday.zsh` already runs
 `starship init`. `install.sh` backs up any existing `~/.config/starship.toml`
 to `starship.toml.bak`.
