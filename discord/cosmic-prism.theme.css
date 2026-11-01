@@ -16,13 +16,11 @@
  * Colours come from the rices' cosmic/*.ron palettes; edit the palette,
  * not this file. */
 
-.theme-dark, .theme-darker, .theme-midnight {
+.theme-dark:not(.custom-user-profile-theme), .visual-refresh.theme-dark, .visual-refresh .theme-dark {
   /* Prism */
   --background-primary: #060D1F;
   --background-secondary: #0E1628;
-  --background-secondary-alt: #161F33;
   --background-tertiary: #030710;
-  --background-accent: #161F33;
   --background-floating: #0E1628;
   --background-mobile-primary: #060D1F;
   --background-mobile-secondary: #0E1628;
@@ -37,8 +35,6 @@
   --deprecated-card-bg: #0E1628;
   --deprecated-quickswitcher-input-background: #0E1628;
   --input-background: #0E1628;
-  --modal-background: #060D1F;
-  --modal-footer-background: #0E1628;
   --activity-card-background: #0E1628;
 
   /* 2025 layout names */
@@ -50,12 +46,6 @@
   --bg-mod-faint: #0E162866;
   --bg-mod-subtle: #161F3399;
   --bg-mod-strong: #262E40;
-  --background-base-low: #060D1F;
-  --background-base-lower: #030710;
-  --background-base-lowest: #030710;
-  --background-surface-high: #0E1628;
-  --background-surface-higher: #161F33;
-  --background-surface-highest: #262E40;
   --border-subtle: #262E40;
   --border-normal: #5A6B8C;
   --border-strong: #8893B3;
@@ -76,10 +66,8 @@
   --interactive-active: #F6F8FF;
   --interactive-muted: #5A6B8C;
   --channels-default: #85CEC4;
-  --text-default: #E0F7FA;
   --text-secondary: #85CEC4;
   --text-tertiary: #8893B3;
-  --text-strong: #F6F8FF;
   --text-feedback-positive: #6488EA;
   --text-feedback-warning: #FFA69E;
   --text-feedback-critical: #E95C4B;
@@ -127,15 +115,81 @@
   --spoiler-background: #161F33;
   --spoiler-hover-background: #262E40;
   --text-code: #6488EA;
+
+  /* the 2025 visual refresh reads these instead */
+  --app-frame-background: #030710;
+  --app-frame-border: #262E40;
+  --background-base-lowest: #030710;
+  --background-base-lower: #0E1628;
+  --background-base-low: #060D1F;
+  --chat-background: #060D1F;
+  --chat-background-default: #060D1F;
+  --chat-border: #262E40;
+  --chat-text-muted: #85CEC4;
+  --home-background: #060D1F;
+  --background-surface-high: #0E1628;
+  --background-surface-higher: #161F33;
+  --background-surface-highest: #262E40;
+  --bg-surface-overlay-tmp: #0E1628;
+  --background-secondary-alt: #161F33;
+  --background-accent: #161F33;
+  --background-brand: #F7C3C6;
+  --background-code: #0E1628;
+  --background-mod-muted: #0E162899;
+  --background-mod-subtle: #0E162899;
+  --background-mod-normal: #161F33;
+  --background-mod-strong: #262E40;
+  --background-feedback-positive: #6488EA30;
+  --background-feedback-warning: #FFA69E30;
+  --background-feedback-critical: #E95C4B30;
+  --background-feedback-info: #85CEC430;
+  --background-feedback-notification: #F7C3C6;
+  --modal-background: #060D1F;
+  --modal-footer-background: #0E1628;
+  --input-background-default: #0E1628;
+  --input-border-default: #262E40;
+  --input-border-hover: #5A6B8C;
+  --input-border-active: #F7C3C6;
+  --input-text-default: #E0F7FA;
+  --input-placeholder-text-default: #8893B3;
+  --channel-icon: #85CEC4;
+  --channel-text-area-placeholder: #8893B3;
+  --text-default: #E0F7FA;
+  --text-strong: #F6F8FF;
+  --text-subtle: #85CEC4;
+  --text-feedback-info: #85CEC4;
+  --text-status-online: #6488EA;
+  --text-status-idle: #FFA69E;
+  --text-status-dnd: #E95C4B;
+  --text-status-offline: #5A6B8C;
+  --status-online: #6488EA;
+  --status-idle: #FFA69E;
+  --status-dnd: #E95C4B;
+  --status-offline: #5A6B8C;
+  --status-speaking: #6488EA;
+  --interactive-icon-default: #85CEC4;
+  --interactive-icon-hover: #E0F7FA;
+  --interactive-icon-active: #F6F8FF;
+  --interactive-text-default: #85CEC4;
+  --interactive-text-hover: #E0F7FA;
+  --interactive-text-active: #F6F8FF;
+  --interactive-background-hover: #0E162899;
+  --interactive-background-selected: #161F33;
+  --interactive-background-active: #161F33;
+  --border-muted: #161F33;
+  --button-outline-primary-text: #E0F7FA;
+  --button-outline-brand-background-hover: #F7C3C620;
+  --button-outline-brand-border-active: #F7C3C6;
+  --brand-260: #F7C3C6;
+  --brand-360: #F7C3C6;
+  --primary-400: #85CEC4;
 }
 
-.theme-light {
+.theme-light:not(.custom-user-profile-theme), .visual-refresh.theme-light, .visual-refresh .theme-light {
   /* Prism Day */
   --background-primary: #DFEAEC;
   --background-secondary: #EEF8F9;
-  --background-secondary-alt: #D5E0E2;
   --background-tertiary: #D5E0E2;
-  --background-accent: #D5E0E2;
   --background-floating: #EEF8F9;
   --background-mobile-primary: #DFEAEC;
   --background-mobile-secondary: #EEF8F9;
@@ -150,8 +204,6 @@
   --deprecated-card-bg: #EEF8F9;
   --deprecated-quickswitcher-input-background: #EEF8F9;
   --input-background: #EEF8F9;
-  --modal-background: #DFEAEC;
-  --modal-footer-background: #EEF8F9;
   --activity-card-background: #EEF8F9;
 
   /* 2025 layout names */
@@ -163,12 +215,6 @@
   --bg-mod-faint: #EEF8F966;
   --bg-mod-subtle: #D5E0E299;
   --bg-mod-strong: #CBD6D8;
-  --background-base-low: #DFEAEC;
-  --background-base-lower: #D5E0E2;
-  --background-base-lowest: #D5E0E2;
-  --background-surface-high: #EEF8F9;
-  --background-surface-higher: #D5E0E2;
-  --background-surface-highest: #CBD6D8;
   --border-subtle: #CBD6D8;
   --border-normal: #CBD6D8;
   --border-strong: #515B7C;
@@ -189,10 +235,8 @@
   --interactive-active: #171E30;
   --interactive-muted: #7B8CAD;
   --channels-default: #306B65;
-  --text-default: #242B3D;
   --text-secondary: #306B65;
   --text-tertiary: #515B7C;
-  --text-strong: #171E30;
   --text-feedback-positive: #2347A9;
   --text-feedback-warning: #963E36;
   --text-feedback-critical: #B52817;
@@ -240,4 +284,72 @@
   --spoiler-background: #D5E0E2;
   --spoiler-hover-background: #CBD6D8;
   --text-code: #2347A9;
+
+  /* the 2025 visual refresh reads these instead */
+  --app-frame-background: #D5E0E2;
+  --app-frame-border: #CBD6D8;
+  --background-base-lowest: #D5E0E2;
+  --background-base-lower: #EEF8F9;
+  --background-base-low: #DFEAEC;
+  --chat-background: #DFEAEC;
+  --chat-background-default: #DFEAEC;
+  --chat-border: #CBD6D8;
+  --chat-text-muted: #306B65;
+  --home-background: #DFEAEC;
+  --background-surface-high: #EEF8F9;
+  --background-surface-higher: #D5E0E2;
+  --background-surface-highest: #CBD6D8;
+  --bg-surface-overlay-tmp: #EEF8F9;
+  --background-secondary-alt: #D5E0E2;
+  --background-accent: #D5E0E2;
+  --background-brand: #804C4F;
+  --background-code: #EEF8F9;
+  --background-mod-muted: #EEF8F999;
+  --background-mod-subtle: #EEF8F999;
+  --background-mod-normal: #D5E0E2;
+  --background-mod-strong: #CBD6D8;
+  --background-feedback-positive: #2347A930;
+  --background-feedback-warning: #963E3630;
+  --background-feedback-critical: #B5281730;
+  --background-feedback-info: #306B6530;
+  --background-feedback-notification: #804C4F;
+  --modal-background: #DFEAEC;
+  --modal-footer-background: #EEF8F9;
+  --input-background-default: #EEF8F9;
+  --input-border-default: #CBD6D8;
+  --input-border-hover: #CBD6D8;
+  --input-border-active: #804C4F;
+  --input-text-default: #242B3D;
+  --input-placeholder-text-default: #515B7C;
+  --channel-icon: #306B65;
+  --channel-text-area-placeholder: #515B7C;
+  --text-default: #242B3D;
+  --text-strong: #171E30;
+  --text-subtle: #306B65;
+  --text-feedback-info: #306B65;
+  --text-status-online: #2347A9;
+  --text-status-idle: #963E36;
+  --text-status-dnd: #B52817;
+  --text-status-offline: #7B8CAD;
+  --status-online: #2347A9;
+  --status-idle: #963E36;
+  --status-dnd: #B52817;
+  --status-offline: #7B8CAD;
+  --status-speaking: #2347A9;
+  --interactive-icon-default: #306B65;
+  --interactive-icon-hover: #242B3D;
+  --interactive-icon-active: #171E30;
+  --interactive-text-default: #306B65;
+  --interactive-text-hover: #242B3D;
+  --interactive-text-active: #171E30;
+  --interactive-background-hover: #EEF8F999;
+  --interactive-background-selected: #D5E0E2;
+  --interactive-background-active: #D5E0E2;
+  --border-muted: #D5E0E2;
+  --button-outline-primary-text: #242B3D;
+  --button-outline-brand-background-hover: #804C4F20;
+  --button-outline-brand-border-active: #804C4F;
+  --brand-260: #804C4F;
+  --brand-360: #804C4F;
+  --primary-400: #306B65;
 }
