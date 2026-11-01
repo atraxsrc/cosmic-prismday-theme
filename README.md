@@ -453,7 +453,7 @@ Add `--system` to install to `/usr/share/icons` instead, for every user and the
 login screen (asks for sudo); `--user` is the default.
 
 Wallpapers ship in [`backgrounds/`](backgrounds/), named `prismday-<subject>`:
-the same five night scenes as Prism, lifted into Prism Day's light key: an aurora over a lake, a purple
+the same five night scenes as Prism, flipped onto Prism Day's frost: an aurora over a lake, a purple
 nebula, a cut gem lit from inside, a blue gem in a lattice of light and a
 moon behind blossom, plus the anime portrait from the screenshot
 (`prismday-anime.png`) in the palette's own tones. The lit gem
