@@ -213,7 +213,7 @@ Firefox and the shell layer do not follow the toggle; those are per-rice files.
 | Where | Setting |
 |-------|---------|
 | Fonts | Interface `Maple Mono Normal` Light, monospace `Maple Mono Normal NFM` |
-| Icons | Cosmic-PrismDay-Petal |
+| Icons | Cosmic-PrismDay-Dark |
 | Windows | Minimize / maximize buttons hidden, theme applied to GNOME apps |
 | Terminal | Maple Mono 15 (weights 500 / bold 800 / dim 300), 77% opacity, no header bar, Prism Day |
 
@@ -705,13 +705,13 @@ cp btop/PrismDay.theme ~/.config/btop/themes/
 Icons: **Cosmic-PrismDay**, the [Kanagawa icons](https://github.com/Fausto-Korpsvart/Kanagawa-GKT-Theme/tree/main/icons/Kanagawa)
 by Fausto Korpsvart recolored to this palette in
 [cosmic-icon-themes](https://github.com/atraxsrc/cosmic-icon-themes). Folders come in
-three colors: **Petal** ![#804C4F](https://placehold.co/12x12/804c4f/804c4f.png) `#804C4F` (default), **Ruby** ![#B52817](https://placehold.co/12x12/b52817/b52817.png) `#B52817` and **Dark** ![#242B3D](https://placehold.co/12x12/242b3d/242b3d.png) `#242B3D` with petal symbols.
+three colors: **Petal** ![#804C4F](https://placehold.co/12x12/804c4f/804c4f.png) `#804C4F`, **Ruby** ![#B52817](https://placehold.co/12x12/b52817/b52817.png) `#B52817` and **Dark** ![#242B3D](https://placehold.co/12x12/242b3d/242b3d.png) `#242B3D` (default) with petal symbols.
 
 ![Cosmic-PrismDay folder colors](https://raw.githubusercontent.com/atraxsrc/cosmic-icon-themes/main/previews/Cosmic-PrismDay.png)
 
 ```bash
-./icons/install.sh                       # Petal folders
-./icons/install.sh --variant Ruby  # or Dark
+./icons/install.sh                  # Dark folders
+./icons/install.sh --variant Petal  # or Ruby
 ```
 
 It downloads the pack from the latest cosmic-icon-themes release, checks its SHA256,
