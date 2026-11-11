@@ -5,7 +5,7 @@
 # repo; only the block below differs.
 set -euo pipefail
 
-NAME="PrismDay"                         # shown in messages
+NAME="Prism Day"                        # shown in messages
 SLUG="prismday"                         # zsh/<slug>.zsh, nvim/lua/plugins/<slug>.lua
 MODE="light"                         # the COSMIC half this rice fills: dark or light
 RON="PrismDay.ron"                      # desktop theme in cosmic/
