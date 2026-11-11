@@ -18,6 +18,6 @@ done
 
 cat <<'EOF'
 
-Done. Needs the Maple fonts and Cosmic-PrismDay icons (./icons/install.sh) installed, and the Prism Day
+Done. Needs the fonts (./fonts/install.sh) and Cosmic-PrismDay icons (./icons/install.sh) installed, and the Prism Day
 terminal scheme imported, or COSMIC falls back to its defaults.
 EOF
